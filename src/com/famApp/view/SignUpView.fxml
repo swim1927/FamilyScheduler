@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.famApp.view.SignUpController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="787.0" layoutY="83.0" prefHeight="46.0" prefWidth="91.0" text="회원가입" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="826.0" layoutY="194.0" text="ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="823.0" layoutY="267.0" text="비밀번호">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="827.0" layoutY="340.0" text="닉네임">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="824.0" layoutY="413.0" text="가족ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="837.0" layoutY="225.0" text="*ID는 e-mail로 입력해주시기 바랍니다.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="member_idField" layoutX="916.0" layoutY="195.0" />
+      <TextField fx:id="passwordField" layoutX="916.0" layoutY="268.0" />
+      <TextField fx:id="nicknameField" layoutX="916.0" layoutY="341.0" />
+      <TextField fx:id="family_idField" layoutX="916.0" layoutY="414.0" />
+      <Button layoutX="852.0" layoutY="491.0" mnemonicParsing="false" onAction="#handleOk" text="확인" />
+      <Button layoutX="945.0" layoutY="491.0" mnemonicParsing="false" onAction="#handleCancel" onMouseClicked="#handleCancel" text="취소" />
+   </children>
+</AnchorPane>
